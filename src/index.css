@@ -91,7 +91,7 @@ display: flex;
 font-size: 0.8rem;
 text-transform: uppercase;
 font-weight: 500;
-color:#ffffff;
+color:#dfdede;
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s ease-in-out;
@@ -361,7 +361,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-margin: 10px 0px;
+margin: 40px 0px;
 width:100%;
 }
 .p-box{

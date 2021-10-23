@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Post from "./Post";
 import * as actions from "../../redux/actions";
 import { postsState$ } from "../../redux/selectors";
+import banner from '../../images/banner.png'
+
 
 export default function PostList() {
   const dispatch = useDispatch();
@@ -16,9 +18,10 @@ export default function PostList() {
   }, [dispatch]);
   return (
     <div className="product-container">
+      <img src={banner} className='responsive' width='83%' height='600px' />
       {posts?.map((post) => (
         <Grid>
-          <Post key={post.id} post={post} />
+          <Post key={post._id} post={post} />
         </Grid>
       ))}
     </div>

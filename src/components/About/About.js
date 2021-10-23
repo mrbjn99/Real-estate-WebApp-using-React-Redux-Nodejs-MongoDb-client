@@ -1,20 +1,28 @@
-import React from 'react';
-import aboutimage from '../../images/hero.png'
+import React from "react";
+import aboutimage from "../../images/hero.png";
+import { Link } from "react-router-dom";
 
 function About() {
-    return (
-        <div className='about'>
-            <div className='about-model'>
-                <img src={aboutimage} alt='about image' />
-            </div>
-            <div className='about-text'>
-                <h2>The Best <br/>Da Nang's Real Estate Website</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil debitis, 
-                laboriosam labore ducimus rem quos ratione optio sint culpa obcaecati unde adipisci in repellat iste asperiores vel et suscipit illum?</p>
-                <button>View more details</button>
-            </div>
-        </div>
-    )
+  return (
+    <div className="about">
+      <div className="about-model">
+        <img src={aboutimage} alt="about image" />
+      </div>
+      <div className="about-text">
+        <h2>
+          The Best <br />
+          Da Nang's Real Estate Website
+        </h2>
+        <p>
+          A website specializing in real estate in Da Nang with the use of the
+          most modern web programming technologies applied, promising to create
+          a different experience for users with novel functions.
+        </p>
+        <Link to="/Visualize" className="header-btn">
+          Details
+        </Link>
+      </div>
+    </div>
+  );
 }
-
 export default About;
