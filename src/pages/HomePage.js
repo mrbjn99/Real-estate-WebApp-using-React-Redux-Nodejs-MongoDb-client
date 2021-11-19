@@ -9,6 +9,8 @@ import About from "../components/About/About.js";
 import TableauMap from "../components/Chart/TableauMap.js";
 import TableauBar from "../components/Chart/TableauBar.js";
 import TableauChart from "../components/Chart/TableauChart.js";
+import TableauAverage from "../components/Chart/TableauAvgMoving";
+import TableauBoxPlot from "../components/Chart/TableauBoxPlot.js";
 
 export default function HomePage() {
 
@@ -35,6 +37,12 @@ export default function HomePage() {
             </Route>
             <Route path="/ChartTreeMap">
               <TableauChart />
+            </Route>
+            <Route path="/Average">
+              <TableauAverage />
+            </Route>
+            <Route path="/BoxPlots">
+              <TableauBoxPlot />
             </Route>
           </Switch>
         </div>

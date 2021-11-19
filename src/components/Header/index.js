@@ -17,7 +17,8 @@ function Navbar() {
                 <li><Link to='/ChartMap'>Map</Link></li>
                 <li><Link to='/ChartBar'>Bar</Link></li>
                 <li><Link to='/ChartTreeMap'>TreeMap</Link></li>
-                <li><Link to='/About'> About</Link></li>
+                <li><Link to='/Average'>Average</Link></li>
+                <li><Link to='/BoxPlots'> Box Plots</Link></li>
             </ul>
        </nav>
     )
